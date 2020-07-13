@@ -7,4 +7,4 @@ The output should be sorted alphabetically by customer name.*/
 SELECT c.customerName AS "Customer Name", CONCAT (e.lastName, ' ', e.firstname) AS "Sales Rep"
 FROM customers c INNER JOIN  employees e
 ON c.salesRepEmployeeNumber = e.employeeNumber
-ORDER BY c.customerName DESC; 
+ORDER BY c.customerName ASC; 
